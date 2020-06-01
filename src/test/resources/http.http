@@ -1,0 +1,8 @@
+GET http://{{host}}/country/all
+Accept: application/json
+
+###
+GET http://{{host}}/user/all
+Accept: application/json
+
+###

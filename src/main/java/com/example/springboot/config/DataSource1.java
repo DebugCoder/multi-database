@@ -14,7 +14,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(value = "com.example.springboot.dao",sqlSessionFactoryRef = "ssf1",sqlSessionTemplateRef = "sst1")
+@MapperScan(value = "com.example.springboot.dao.db1",sqlSessionFactoryRef = "ssf1",sqlSessionTemplateRef = "sst1")
 public class DataSource1 {
 
     @Bean
@@ -32,7 +32,7 @@ public class DataSource1 {
 
         SqlSessionFactoryBean factory = new SqlSessionFactoryBean();
         factory.setDataSource(dataSource);
-        Resource[] resources = new PathMatchingResourcePatternResolver().getResources("classpath*:mapper/**/*.xml");
+        Resource[] resources = new PathMatchingResourcePatternResolver().getResources("classpath*:db1mapper/**/*.xml");
         factory.setMapperLocations(resources);
         return factory.getObject();
     }

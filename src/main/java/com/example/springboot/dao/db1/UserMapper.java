@@ -1,4 +1,4 @@
-package com.example.springboot.dao;
+package com.example.springboot.dao.db1;
 
 import com.example.springboot.model.User;
 import org.apache.ibatis.annotations.Mapper;

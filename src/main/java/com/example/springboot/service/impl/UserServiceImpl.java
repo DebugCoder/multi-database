@@ -1,6 +1,6 @@
 package com.example.springboot.service.impl;
 
-import com.example.springboot.dao.UserMapper;
+import com.example.springboot.dao.db1.UserMapper;
 import com.example.springboot.model.User;
 import com.example.springboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
