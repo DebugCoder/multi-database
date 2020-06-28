@@ -1,11 +1,3 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/springboot?serverTimezone=UTC
-    username: root
-    password: shengzhi!@#
-    driver-class-name: com.mysql.cj.jdbc.Driver
-mybatis:
-  mapper-locations: classpath:mapper/*Mapper.xml
 logging:
   level:
     com.example.springboot.dao: debug
